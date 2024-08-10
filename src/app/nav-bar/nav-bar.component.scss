@@ -1,5 +1,7 @@
+@import "../../styles";
+
 nav li a.active {
-    color: #fff;
-    background-color: #007bff;
+    color: $white;
+    background-color: $primary;
     border-radius: 5px;
 }

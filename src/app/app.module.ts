@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BasicTextComponent } from './basic-text/basic-text.component';
+import { ContenuBasiqueComponent } from './contenu/_contenu-basique/contenu-basique.component';
 import { AccueilComponent } from './__Accueil__/accueil.component';
 import { CoordonneesComponent } from './__Coordonnees__/coordonnees.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -16,6 +16,7 @@ import { FaqComponent } from './__FAQ__/faq.component';
 import { PiedDePageComponent } from './pied-de-page/pied-de-page.component';
 import { RetourEnHautComponent } from './retour-en-haut/retour-en-haut.component';
 import { ProblematiquesTraiteesComponent } from './contenu/problematiques-traitees/problematiques-traitees.component';
+import { ContenuSplit5050Component } from './contenu/_contenu-split-50-50/contenu-split-50-50.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -25,7 +26,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    BasicTextComponent,
+    ContenuBasiqueComponent,
     AccueilComponent,
     CoordonneesComponent,
     NavBarComponent,
@@ -35,7 +36,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FaqComponent,
     PiedDePageComponent,
     RetourEnHautComponent,
-    ProblematiquesTraiteesComponent
+    ProblematiquesTraiteesComponent,
+    ContenuSplit5050Component
   ],
   imports: [
     BrowserModule,
