@@ -6,10 +6,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/home">Accueil</a>
+            <a class="nav-link" [ngClass]="this.currentUrl == '/accueil' ? 'active' : ''" aria-current="page" href="/accueil">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Me Joindre</a>
+            <a class="nav-link" [ngClass]="this.currentUrl == '/services-offerts' ? 'active' : ''" href="/services-offerts">Services offerts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="this.currentUrl == '/rendez-vous' ? 'active' : ''" aria-current="page" href="/rendez-vous">Prendre rendez-vous</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="this.currentUrl == '/faq' ? 'active' : ''" href="/faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="this.currentUrl == '/coordonnees' ? 'active' : ''" aria-current="page" href="/coordonnees">Coordonnées</a>
           </li>
         </ul>
       </div>
