@@ -1,0 +1,80 @@
+<section class="contact-wrap">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="input-block">
+                    <label for="firstname" class="form-label">Prénom</label>
+                    <input id="firstname" type="text" class="form-control"
+                        [ngClass]="firstname.invalid && (firstname.dirty || firstname.touched) ? invalidInput : ''"
+                        required [(ngModel)]="prenom" #firstname="ngModel" [ngModelOptions]="{standalone: true}">
+                    <div *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)">
+                        <div *ngIf="firstname.hasError('required')">
+                            <small>Le prénom est requis.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-block">
+                    <label for="lastname" class="form-label">Nom</label>
+                    <input id="lastname" type="text" class="form-control"
+                        [ngClass]="lastname.invalid && (lastname.dirty || lastname.touched) ? invalidInput : ''"
+                        required [(ngModel)]="nom" #lastname="ngModel" [ngModelOptions]="{standalone: true}">
+                    <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)">
+                        <div *ngIf="lastname.hasError('required')">
+                            <small>Le nom est requis.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="input-block">
+                    <label for="email-input" class="form-label">Courriel</label>
+                    <input id="email-input" type="email" class="form-control"
+                        [ngClass]="email.invalid && (email.dirty || email.touched) ? invalidInput : ''"
+                        required [(ngModel)]="courriel" #email="ngModel" [ngModelOptions]="{standalone: true}">
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)">
+                        <div *ngIf="email.hasError('required')">
+                            <small>Le courriel est requis.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="input-block">
+                    <label for="subject-input" class="form-label">Sujet</label>
+                    <input id="subject-input" type="text" class="form-control"
+                        [ngClass]="subject.invalid && (subject.dirty || subject.touched) ? invalidInput : ''"
+                        required [(ngModel)]="sujet" #subject="ngModel" [ngModelOptions]="{standalone: true}">
+                    <div *ngIf="subject.invalid && (subject.dirty || subject.touched)">
+                        <div *ngIf="subject.hasError('required')">
+                            <small>Le sujet est requis.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="input-block textarea">
+                    <label for="message-input" class="form-label">Message</label>
+                    <textarea id="message-input" rows="3" type="text" class="form-control"
+                        [ngClass]="content.invalid && (content.dirty || content.touched) ? invalidInput : ''"
+                        required [(ngModel)]="contenu" #content="ngModel" [ngModelOptions]="{standalone: true}"></textarea>
+                    <div *ngIf="content.invalid && (content.dirty || content.touched)">
+                        <div *ngIf="content.hasError('required')">
+                            <small>Un message est requis.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 padding-1-rem">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </div>
+    </form>
+</section>

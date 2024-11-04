@@ -11,12 +11,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { EntetePagePrincipalComponent } from './entete-page-principal/entete-page-principal.component';
 import { ServicesOffertsComponent } from './__Services-offerts__/services-offerts.component';
-import { RendezVousComponent } from './__Rendez-vous__/rendez-vous.component';
+import { MeContacterComponent } from './__Me-Contacter__/me-contacter.component';
 import { FaqComponent } from './__FAQ__/faq.component';
 import { PiedDePageComponent } from './pied-de-page/pied-de-page.component';
 import { RetourEnHautComponent } from './retour-en-haut/retour-en-haut.component';
 import { ProblematiquesTraiteesComponent } from './contenu/problematiques-traitees/problematiques-traitees.component';
 import { ContenuSplit5050Component } from './contenu/_contenu-split-50-50/contenu-split-50-50.component';
+import { ContactFormComponent } from './contenu/contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,16 +34,18 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavBarComponent,
     EntetePagePrincipalComponent,
     ServicesOffertsComponent,
-    RendezVousComponent,
+    MeContacterComponent,
     FaqComponent,
     PiedDePageComponent,
     RetourEnHautComponent,
     ProblematiquesTraiteesComponent,
-    ContenuSplit5050Component
+    ContenuSplit5050Component,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

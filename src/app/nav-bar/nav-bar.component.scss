@@ -1,7 +1,14 @@
 @import "../../styles";
 
+nav .brain{
+    height: 3rem;
+    width: 3rem;
+}
+
+nav .centered{
+    justify-content: center;
+}
+
 nav li a.active {
-    color: $white;
-    background-color: $primary;
-    border-radius: 5px;
+    font-weight: 500;
 }

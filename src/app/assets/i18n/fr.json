@@ -1,5 +1,17 @@
 {
     "home": "Accueil",
     "contact": "Contact",
-    "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "accueil":
+    {
+        "message_de_bienvenue" : {
+            "paragraphe_01": "Choisir un.e psychologue qui vous correspond est prioritaire. La relation thérapeutique en est une de confiance, d’authenticité et de bienveillance, et est nécessaire pour assurer le travail thérapeutique. Il est donc important de choisir la personne avec qui vous voulez faire équipe.",
+            "paragraphe_02": "Ici, je vous partage de l’information sur mon parcours, mon approche et mes expertises afin que vous puissiez évaluer si mon profil professionnel pourrait correspondre à ce dont vous avez besoin.",
+            "paragraphe_03": "Au plaisir de faire équipe pour vous accompagner dans la direction qui fait du sens pour vous."
+        }
+    },
+    "rendez_vous":{
+        "titre": "Me contacter",
+        "sous_titre": "Pour avoir davantage d’informations ou pour prendre rendez-vous contactez-moi par téléphone, par courriel ou en utilisant le formulaire ci-dessous."
+    }
 }
