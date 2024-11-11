@@ -1,7 +1,17 @@
 <app-entete-page-principal></app-entete-page-principal>
 <app-contenu-basique text="{{'accueil.message_de_bienvenue.paragraphe_01' | translate}}"></app-contenu-basique>
-<app-contenu-basique text="{{'accueil.message_de_bienvenue.paragraphe_02' | translate}}" [applyBgColor]="true"></app-contenu-basique>
-<app-contenu-basique text="{{'accueil.message_de_bienvenue.paragraphe_03' | translate}}"></app-contenu-basique>
+<app-carte-service 
+    imagesrc="./carte-service/psychotherapie-icone.png"
+    title="{{'accueil.carte-service.psychotherapie.titre' | translate}}"
+    paragraph="{{'accueil.carte-service.psychotherapie.paragraphe' | translate}}"
+    buttonText="{{'accueil.carte-service.psychotherapie.bouton' | translate}}">
+</app-carte-service>
+<app-carte-service 
+    imagesrc="./carte-service/evaluation-icone.png"
+    title="{{'accueil.carte-service.evaluation-psychologique.titre' | translate}}"
+    paragraph="{{'accueil.carte-service.evaluation-psychologique.paragraphe' | translate}}"
+    buttonText="{{'accueil.carte-service.evaluation-psychologique.bouton' | translate}}">
+</app-carte-service>
+<app-biographie></app-biographie>
 <app-problematiques-traitees></app-problematiques-traitees>
-<app-contenu-split-50-50></app-contenu-split-50-50>
 <app-contenu-basique title="FINAL" text="{{'lorem' | translate}}"></app-contenu-basique>

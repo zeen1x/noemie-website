@@ -1,0 +1,42 @@
+h2{
+    padding-bottom: 2rem;
+}
+
+.frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    padding-bottom: 3rem;
+}
+
+img {
+    border-radius: 20px;
+    width: 320px;
+    margin: auto;
+    display: block;
+}
+
+@media (min-width: 768px) { 
+    img{
+        width: 350px;
+    }
+}
+
+@media (min-width: 992px) { 
+    image{
+        padding-top: 3rem;
+    }
+
+    img{
+        width: 380px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    img{
+        width: 450px;
+    }
+}

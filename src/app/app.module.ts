@@ -19,6 +19,8 @@ import { ProblematiquesTraiteesComponent } from './contenu/problematiques-traite
 import { ContenuSplit5050Component } from './contenu/_contenu-split-50-50/contenu-split-50-50.component';
 import { ContactFormComponent } from './contenu/contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
+import { BiographieComponent } from './biographie/biographie.component';
+import { CarteServiceComponent } from './carte-service/carte-service.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -40,7 +42,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     RetourEnHautComponent,
     ProblematiquesTraiteesComponent,
     ContenuSplit5050Component,
-    ContactFormComponent
+    ContactFormComponent,
+    BiographieComponent,
+    CarteServiceComponent
   ],
   imports: [
     BrowserModule,

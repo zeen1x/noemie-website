@@ -1,10 +1,15 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 gx-0">
-            <app-contenu-basique title="Titre" text="{{'lorem' | translate}}" [applyBgColor]="true"></app-contenu-basique>
+        <div class="col" [ngClass]="'background-color'+bgColorStyle1">
+            <app-contenu-basique title="{{titre1}}" text="{{texte1}}"></app-contenu-basique>
         </div>
-        <div class="col-md-6 gx-0">
-            <app-contenu-basique title="Autre titre" text="{{'lorem' | translate}}" [applyBgColor]="true" [bgColorStyle]="2"></app-contenu-basique>
+        <div class="col" [ngClass]="'background-color'+bgColorStyle2">
+            <ng-template [ngIf]="{image} !== null">
+                <img class="custom-size" src="{{image}}" />
+            </ng-template>
+            <ng-template [ngIf]="{image} === null">
+                <app-contenu-basique title="{{titre2}}" text="{{texte2}}"></app-contenu-basique>
+            </ng-template>
         </div>
     </div>
 </div>

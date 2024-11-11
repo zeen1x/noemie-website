@@ -1,14 +1,16 @@
+@import "../../styles";
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   cursor: pointer;
   font-size: 2rem;
-  color: #000;
+  color: black;
   display: none;
   /* Initially hidden */
 
   &:hover {
-    color: #007bff;
+    color: $primary;
   }
 }

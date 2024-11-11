@@ -5,9 +5,23 @@
     "accueil":
     {
         "message_de_bienvenue" : {
-            "paragraphe_01": "Choisir un.e psychologue qui vous correspond est prioritaire. La relation thérapeutique en est une de confiance, d’authenticité et de bienveillance, et est nécessaire pour assurer le travail thérapeutique. Il est donc important de choisir la personne avec qui vous voulez faire équipe.",
-            "paragraphe_02": "Ici, je vous partage de l’information sur mon parcours, mon approche et mes expertises afin que vous puissiez évaluer si mon profil professionnel pourrait correspondre à ce dont vous avez besoin.",
-            "paragraphe_03": "Au plaisir de faire équipe pour vous accompagner dans la direction qui fait du sens pour vous."
+            "paragraphe_01": "<p>Choisir un.e psychologue qui vous correspond est prioritaire. La relation thérapeutique en est une de confiance, d’authenticité et de bienveillance, et est nécessaire pour assurer le travail thérapeutique. Il est donc important de bien choisir la personne avec qui vous voulez faire équipe.</p><p>Ici, je vous partage de l’information sur mon parcours, mon approche et mes expertises afin que vous puissiez évaluer si mon profil professionnel pourrait correspondre à ce dont vous avez besoin.</p><p>Au plaisir de faire équipe pour vous accompagner dans la direction qui fait du sens pour vous.</p>"
+        },
+        "a_propos_de_moi" : {
+            "titre_01": "À propos de moi",
+            "texte_01": "<p>Nouvellement psychologue clinicienne. J’ai complété mon internat d’un an à la Base Militaire de Bagotville comme psychologue interne en 2023-2024. J’ai pu y développer, notamment, des compétences de traitement et d’évaluation des troubles de stress post-traumatique et des troubles de la personnalité.</p><p>J’ai aussi, avant cela, complété deux années en tant que psychologue stagiaire à la Clinique Universitaire de Psychologie.</p><p>J’ai effectué mon baccalauréat en psychololgie et mon doctorat en psychologie clinique à l’Université du Québec à Chicoutimi. Mon essai doctoral (la recherche scientifique que je devais effectuer durant le doctorat) portait sur les troubles à symptomatologie somatique (douleurs chroniques, somatisation), chez les jeunes.<p>Avant cela, j’ai eu la chance d’accompagner des hommes ayant des problématiques de violence et de gestion de la colère, en thérapie de groupe et en séances individuelles, en tant qu’intervenante.</p><p>J’ai aussi travaillé comme intervenante en santé mentale avec des adultes de tous âges.</p><br><p>En tant que psychologue, j’accompagne des adultes de tous âges présentant des difficultés variées.</p>"
+        },
+        "carte-service": {
+            "psychotherapie": {
+                "titre": "Psychothérapie",
+                "paragraphe": "<p>La psychothérapie est un traitement psychologique pour les troubles de santé mentale, ou toute autre problématique qui entraîne de la souffrance ou de la détresse psychologique.</p>",
+                "bouton": "En savoir plus"
+            },
+            "evaluation-psychologique": {
+                "titre": "Évaluation psychologique",
+                "paragraphe": "<p>J’offre un service d'évaluation psychologique qui comprend deux types d'évaluation selon vos besoins.</p><p><ul><li>L'évaluation des troubles mentaux</li><li>L'évaluation du fonctionnement psychologique et mental</li></ul></p>",
+                "bouton": "En savoir plus"
+            }
         }
     },
     "rendez_vous":{

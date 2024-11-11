@@ -1,0 +1,25 @@
+.carte-service {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.image {
+    padding-top: 3rem;
+}
+
+@media (min-width: 992px) { 
+    .image{
+        padding-bottom: 3rem;
+    }
+}
+
+img {
+    border-radius: 15px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
+}

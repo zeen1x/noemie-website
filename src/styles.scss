@@ -1,18 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-$primary: #785f7d;
-$secondary: #ada0b1;
-$ternary: #ebdbcf;
-$light: #aebfaa;
-$dark: #5f705b;
+$primary: #828267;
+$secondary: #D6Ce93;
+$ternary: #D8A48f;
+$light: #EFebce;
+$dark: #BB8588;
 
 // merge with existing $theme-colors map
 $theme-colors: map-merge($theme-colors, (
@@ -23,14 +23,22 @@ $theme-colors: map-merge($theme-colors, (
 ));
 
 .background-color0 {
-  background-color: $ternary;
+  background-color: $primary;
 }
 
 .background-color1 {
-  background-color: $light;
+  background-color: $secondary;
 }
 
 .background-color2 {
+  background-color: $ternary;
+}
+
+.background-color3 {
+  background-color: $light;
+}
+
+.background-color4 {
   background-color: $dark;
   color: $white;
   h2 {
@@ -38,8 +46,13 @@ $theme-colors: map-merge($theme-colors, (
   }
 }
 
-$border-radius: 0px;
+$border-radius: 15px;
 $navbar-light-active-color: $primary;
+
+.btn-primary {
+  --bs-btn-color: var(--bs-white) !important;
+  --bs-btn-hover-color: var(--bs-white) !important;
+}
 
 // set changes
 @import "../node_modules/bootstrap/scss/bootstrap";
